@@ -1,0 +1,11 @@
+from selenium import webdriver
+browser = webdriver.Firefox()
+browser.get('https://www.facebook.com/')
+emailElem = browser.find_element_by_id('email')
+emailElem.send_keys('nikhilranjan7@gmail.com')
+passwordElem = browser.find_element_by_id('pass')
+passwordElem.send_keys('don't look here')
+passwordElem.submit()
+#messages = browser.find_element_by_class_name('_2n_9')
+#messages.click()
+bowser.get('https://www.facebook.com/messages')
